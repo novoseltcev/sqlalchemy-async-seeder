@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sqlalchemy-async-seeder"
+version = "0.1.0"
+description = ""
+authors = [
+    "Novoseltcev Stanislav <novoseltcev.stanislav@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "sqlalchemy_async_seeder"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = {extras = ["async"], version = "^1.4.44"}
+pydantic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
